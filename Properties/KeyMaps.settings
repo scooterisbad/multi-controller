@@ -1,0 +1,21 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="multi_controller.Properties" GeneratedClassName="KeyMaps">
+  <Profiles />
+  <Settings>
+    <Setting Name="Forward" Type="multi_controller.KeyMap" Scope="User">
+      <Value Profile="(Default)">87, 0, 0</Value>
+    </Setting>
+    <Setting Name="Left" Type="multi_controller.KeyMap" Scope="User">
+      <Value Profile="(Default)">65, 0, 0</Value>
+    </Setting>
+    <Setting Name="Back" Type="multi_controller.KeyMap" Scope="User">
+      <Value Profile="(Default)">83, 0, 0</Value>
+    </Setting>
+    <Setting Name="Right" Type="multi_controller.KeyMap" Scope="User">
+      <Value Profile="(Default)">68, 0, 0</Value>
+    </Setting>
+    <Setting Name="Jump" Type="multi_controller.KeyMap" Scope="User">
+      <Value Profile="(Default)">32, 0, 0</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
