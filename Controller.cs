@@ -226,16 +226,16 @@ namespace multi_controller
                 Win32.POINT pos = new Win32.POINT(args.X, args.Y);
                 Win32.ScreenToClient(handle, ref pos);
 
-                Win32.RECT ogRECT = collection.ActiveGroup.GetClient(handle).GetRect();
+                //Win32.RECT ogRECT = collection.ActiveGroup.GetClient(handle).GetRect();
 
                 foreach (Client client in clients)
                 {
-                    Win32.RECT clientRect = client.GetRect();
+                    /*Win32.RECT clientRect = client.GetRect();
                     float heightDiff = (clientRect.bottom - clientRect.top) / (ogRECT.bottom - ogRECT.top);
                     float widthDiff = (clientRect.right - clientRect.left) / (ogRECT.right - ogRECT.left);
 
                     pos.x = (int)(pos.x * widthDiff);
-                    pos.y = (int)(pos.y * heightDiff);
+                    pos.y = (int)(pos.y * heightDiff);*/
 
                     IntPtr lParam = (IntPtr)(((pos.y) << 16) | ((pos.x) & 0xffff));
 

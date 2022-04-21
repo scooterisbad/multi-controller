@@ -117,13 +117,13 @@ namespace multi_controller.Forms
             renderCursor = true;
             cursorPos = new Win32.POINT(e.X, e.Y);
 
-            Win32.RECT thisRect = new Win32.RECT();
+            /*Win32.RECT thisRect = new Win32.RECT();
             Win32.GetClientRect(this.Handle, out thisRect);
             float heightDiff = (thisRect.bottom - thisRect.top) / (ogRect.bottom - ogRect.top);
             float widthDiff = (thisRect.right - thisRect.left) / (ogRect.right - ogRect.left);
 
             cursorPos.x = (int)(cursorPos.x * widthDiff);
-            cursorPos.y = (int)(cursorPos.y * heightDiff);
+            cursorPos.y = (int)(cursorPos.y * heightDiff);*/
 
             Invalidate(cursorRect);
         }
@@ -188,7 +188,7 @@ namespace multi_controller.Forms
             {
                 sideHovered = associatedClient.ControlSet;
 
-                Win32.GetClientRect(this.Handle, out ogRect);
+                //Win32.GetClientRect(this.Handle, out ogRect);
 
                 renderCursor = false;
                 Invalidate(cursorRect);
